@@ -27,3 +27,21 @@ git rev-parse "depart-cc^{commit}"
 git log --oneline --graph --all
 Pour trouver le commit de départ 
 git merge-base feature/theme-sombre feature/confirmation
+
+Base et branches
+
+Le commit commun aux branches A et B est 67aeb4f depart-cc.
+
+La branche hotfix a été créée après la fusion de A et B, et la quatrième branche après le commit 197c9bb du hotfix.
+
+Fusion et fonctionnement
+
+Une fusion Git réussie ne garantit pas que le site fonctionne, il ne vérifie pas l'affichage.
+
+Dans mon projet, la confirmation était difficile à lire avec le thème sombre. J'ai donc amélioré son contraste avec un fond bleu, un texte blanc.
+
+Commit et publication :
+
+Après un commit local, il faut utiliser git push pour publier les modifications sur GitHub.
+
+Mon commit 1047243 correspond à l'ajout du nom de l'atelier dans la confirmation. Je l'ai vérifier dans l'historique des commits de main sur GitHub.
